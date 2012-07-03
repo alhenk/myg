@@ -47,7 +47,7 @@
           %tr
             %td= tbl.count
             %td= tbl.note
-            %td= link_to " #{tbl.created_at} " , edit_pullup_path(tbl)
+            %td= link_to " #{tbl.created_at} " , edit_pullup_path(tbl),{:title=>'click to edit or delete'}
 
   %div{:class=>'container_16'}
     %div{:class=>'grid_16'}

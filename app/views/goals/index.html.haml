@@ -5,7 +5,8 @@
   
   %div{:class=>'grid_16'}
     %div{:class=>'box'}
-      %h2 ENTER YOUR GOALS
+      %h2  
+        =link_to 'ENTER YOUR GOALS' , edit_goal_path(@user),{:title=>'click to edit'}
 
       %div{:class=>'block'}
         %div{:id=>'info',:style=>"height:280px"}
@@ -23,11 +24,11 @@
             %tbody
               %tr
                 %td=  "#{@user.name }   " 
-                %td=  link_to " #{@user.pullups} " , edit_goal_path(@user)
-                %td=  link_to " #{@user.pushups} " , edit_goal_path(@user)
-                %td=  link_to " #{@user.situps}  " , edit_goal_path(@user)
-                %td=  link_to " #{@user.squats}  " , edit_goal_path(@user)
-                %td=  link_to " #{@user.dips}    " , edit_goal_path(@user)
+                %td=  link_to " #{@user.pullups} " , edit_goal_path(@user),{:title=>'click to edit'}
+                %td=  link_to " #{@user.pushups} " , edit_goal_path(@user),{:title=>'click to edit'}
+                %td=  link_to " #{@user.situps}  " , edit_goal_path(@user),{:title=>'click to edit'}
+                %td=  link_to " #{@user.squats}  " , edit_goal_path(@user),{:title=>'click to edit'}
+                %td=  link_to " #{@user.dips}    " , edit_goal_path(@user),{:title=>'click to edit'}
           %br
           %p Clik on goal to edit value      
 

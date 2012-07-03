@@ -17,12 +17,12 @@
       %div{:class=>'grid_16'}
         %ul{:class=>'nav main'}
           %li 
-            %a{:href=> static_index_path }HOME
+            %a{:href=> static_index_path, :title=>'To main page'}HOME
           - if session[:user_id] 
             %li
-              %a{:href=> pullups_path}PULL-UPS
+              %a{:href=> pullups_path, :title=>'Pull-Ups results'}PULL-UPS
             %li
-              %a{:href=> pushups_path}PUSH-UPS
+              %a{:href=> pushups_path, :title=>'Push-Ups results'}PUSH-UPS
             %li
               -#%a{:href=> pushups_path}SIT-UPS
             %li
@@ -30,12 +30,12 @@
             %li
               -#%a{:href=>pushups_path}DIPS
             %li
-              %a{:href=> goals_path}GOALS
+              %a{:href=> goals_path,:title=>'Change your goals'}GOALS
             %li{:class=>'secondary'}
               = link_to 'LOGOUT', logout_path, method: :delete
 
           %li{:class=>'secondary'}
-            %a{:href=> howtos_path}HELP
+            %a{:href=> howtos_path, :title=>'How to use'}HELP
  
 
     %div{:class=>'container_16'}
